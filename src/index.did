@@ -1,0 +1,6 @@
+service: () -> {
+    getBalance: () -> (nat64) query;
+    getLogs: () -> (vec record {description:text; account:principal; amount:nat64}) query;
+    getPaid: (principal, nat64) -> ();
+    pay: (principal, nat64) -> ();
+}
